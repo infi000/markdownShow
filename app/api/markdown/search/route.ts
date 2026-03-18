@@ -12,7 +12,7 @@ export async function GET(request: Request) {
       return NextResponse.json([])
     }
 
-    const results = searchMarkdownFiles(query)
+    const results = searchMarkdownFiles(query, false)
     return NextResponse.json(results)
   } catch (error) {
     return NextResponse.json({ error: '搜索失败' }, { status: 500 })

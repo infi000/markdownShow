@@ -47,13 +47,13 @@ export default async function MarkdownPage({ params }: { params: Promise<{ slug:
               </header>
 
               {/* Markdown 内容 */}
-              <MarkdownRenderer content={file.content} />
+              <MarkdownRenderer content={file.content || ''} />
             </article>
           </div>
 
           {/* 侧边栏 - 目录 */}
           <aside className="hidden lg:block">
-            <TableOfContents content={file.content} />
+            <TableOfContents content={file.content || ''} />
           </aside>
         </div>
       </div>

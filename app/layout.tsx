@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Markdown 文档服务',
-  description: '支持热更新的 Markdown 文档渲染服务',
+  title: 'AI 前端趋势简报中心',
+  description: '展示 GitHub AI Frontend Trending 系列 Markdown 简报、索引与前端开发者视角解读。',
 }
 
 export default function RootLayout({
